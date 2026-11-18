@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Resource preservation for release builds.
+    Keeps drawable resources (notification icons) and custom notification
+    sound from being stripped by the R8 compiler.
+    See: https://developer.android.com/topic/performance/app-optimization/customize-which-resources-to-keep
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/*,@mipmap/*,@raw/notiification_sound" />
